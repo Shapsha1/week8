@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Intro";
+    src: url(../fonts/Intro.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Light.ttf);
+    font-weight: 300;
+}
+.body {
+    background-image: url(../images/pic.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button {
+    display: inline-flex;
+    border-radius: 100px;
+    padding: 14px 14px 11px 16px;
+
+    background: var(--unnamed, #5222d0);
+    border: none;
+    text-decoration: none;
+
+    color: #fff;
+    font-family: Intro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 49px;
+}
+
+.home-page-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title {
+    margin-left: 9%;
+    margin-top: 76px;
+    margin-bottom: 0;
+
+    color: #000;
+    font-family: Intro;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 72px */
+
+    width: 38%;
+}
+
+.descritption {
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    color: var(--unnamed, #000);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */
+}
+
+.home-page-info__description {
+    margin-left: 9%;
+    width: 34%;
+}
+
+.button_buy {
+    margin-left: 9%;
+    padding: 28px 31px 21px 33px;
+    margin-top: 5px;
+
+    font-size: 35px;
+}
+
+.menu {
+    margin-left: 9%;
+    margin-bottom: 80px;
+
+    list-style: none;
+
+    display: flex;
+    gap: 34px;
+}
+
+.menu_home-page {
+    margin-top: 146px;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */
+}
+
+.menu__item_home-page {
+    color: #5222d0;
+}
+
+.button__text_buy::after {
+    content: url(../images/ico.svg);
+    position: relative;
+    padding-left: 16px;
+}
+
+.button__text_basket::after {
+    content: url(../images/ico2.svg);
+    position: relative;
+    padding-left: 5px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: fit-content(42%) fit-content(20%);
+
+    padding: 14px 5% 86px 6%;
+}
+
+.cards-container__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 26px 40px 25px 35px;
+}
+
+.cards-container__title {
+    font-family: Intro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cards-container__description {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cards-container__picture-container {
+    align-self: center;
+    margin-bottom: 23px;
+}
+
+.cards-container__picture {
+    max-width: 100%;
+}
+
+.cards-container__card_subscription {
+    background-color: #ec615b;
+}
+
+.cards-container__title_subscription {
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.cards-container__input {
+    margin-bottom: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+    width: 88%;
+}
+
+.cards-container__input::placeholder {
+    color: var(--, #000);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */
+}
